@@ -1,0 +1,46 @@
+$accent: #646cff;
+
+.page {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.card {
+  width: min(100%, 44rem);
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border: 1px solid #dce0ea;
+  border-radius: 1.5rem;
+  background: #fff;
+
+  h1 {
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    line-height: 1.2;
+  }
+}
+
+.label {
+  color: #5158d9;
+  font-weight: 600;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: 0.625rem;
+  background: $accent;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+
+  &:hover {
+    background: #5158d9;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $accent;
+    outline-offset: 4px;
+  }
+}
